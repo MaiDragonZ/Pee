@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="Style.css" />
+
+    <style>
+        .content {
+            display: flex;
+            flex: 1;
+        }
+        .rectangle {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            background-color: black; /* สีขอบ */
+            overflow: hidden; /* ซ่อนส่วนที่เกินขอบ */
+        }
+        .rectangle img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* ให้รูปเต็มกรอบ */
+        }
+        .container {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8); /* สีพื้นหลังของตัวอักษร */
+            padding: 10px; /* ขอบข้อความ */
+        }
+
+        
+    </style>
+</head>
+<body>
+    <!-- navbar หน้าหลักต่างๆ -->
+    <nav class="navbar navbar-expand-sm bg-secondary">
+        <div class="container-fluid">
+            <ul class="nav nav-pills mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="https://maidragonz.github.io/DragonZ/">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="http://127.0.0.1:5500/phuu/timeline.html">Timeline</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="content">
+        <!-- ซ้าย -->
+        
+        <div class="rectangle left-rectangle">
+            <img src="https://w0.peakpx.com/wallpaper/442/882/HD-wallpaper-dinosaur-animal-forest-mountain.jpg" alt="Dino1" />
+            <div class="container">
+                <h4><b><a href="DinoEatPlants.html">ไดโนเสาร์กินพืช<br></a></b></h4>
+                <p><a href="DinoEatPlants.html">Dinosaur Eat Plant</a></p>
+            </div>
+        </div>
+        
+        <!-- ขวา -->
+        <div class="rectangle right-rectangle">
+            
+            <img src="https://images2.alphacoders.com/546/546340.jpg" alt="Dino1" />
+            <div class="container">
+                <h4><b><a href="DinoEatMeat.html">ไดโนเสาร์กินเนื้อ</a></b></h4>
+                <p><a href="DinoEatMeat.html">Dinosaur Eat Meat</a></p>
+            </div>
+            </a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

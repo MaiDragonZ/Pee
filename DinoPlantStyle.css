@@ -1,0 +1,48 @@
+.nav-item .nav-link{
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.937);
+    transition: font-size 0.3s;
+}
+
+.nav-item .nav-link:hover {
+    font-size: 1.5em; /* เปลี่ยนขนาดตัวอักษรเมื่อ hover */
+}
+
+.nav-item .dropdown-item{
+    transition: font-size 0.3s;
+}
+
+.nav-item .dropdown-item:hover{
+    font-size: 1.5em; /* เปลี่ยนขนาดตัวอักษรเมื่อ hover */
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* ใช้เพื่อให้ Navbar อยู่หน้าสุด */
+    font-family: Arial, sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding-top: 56px;
+    background-image: url('https://t3.ftcdn.net/jpg/06/58/94/52/360_F_658945249_X4V2CDkFuXeJ9hSmmAfs8nCAWXD3SuZu.jpg');
+    background-size: cover;
+    overflow-x: hidden;
+    background-attachment: fixed;
+}
+
+.searchInput {
+    text-align: center;
+    margin: auto;
+    max-width: 80%;
+}
+
+.green-background {
+    background-color: lightgreen;
+}
+
+.row{
+    padding-left: 5%;
+    padding-right: 5%;
+}
