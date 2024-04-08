@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinosaur Eat Plant</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="DinoPlantStyle.css">
+    <script src="DinoScript.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md bg-success">
+        <div class="container-fluid">
+            <!-- Links -->
+            <ul class="nav nav-pills mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="http://127.0.0.1:5500/maai/main.html">HOME</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-light" data-bs-toggle="dropdown" href="DinoEatPlants.html">Plant</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="http://127.0.0.1:5500/maprang/m1.html">1.Maiasaura</a></li>
+                        <li><a class="dropdown-item" href="http://127.0.0.1:5500/maprang/m2.html">2.Saichania</a></li>
+                        <li><a class="dropdown-item" href="http://127.0.0.1:5500/maprang/m3.html">3.Diplodocus</a></li>
+                        <li><a class="dropdown-item" href="http://127.0.0.1:5500/maprang/m4.html">4.Saltasaurus</a></li>
+                        <li><a class="dropdown-item" href="http://127.0.0.1:5500/maprang/m5.html">5.Triceratops</a></li>
+                        <li><a class="dropdown-item" href="http://127.0.0.1:5500/maprang/m6.html">6.Gallimimus</a></li>
+                        <li><a class="dropdown-item" href="http://127.0.0.1:5500/maprang/m7.html">7.Iguanodon</a></li>
+                        <li><a class="dropdown-item" href="http://127.0.0.1:5500/maprang/m8.html">8.Diplodocus</a></li>
+                        <li><a class="dropdown-item" href="http://127.0.0.1:5500/maprang/m9.html">9.Stegosaurus</a></li>
+                        <li><a class="dropdown-item" href="http://127.0.0.1:5500/maprang/m10.html">10.Apatosaurus</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="DinoEatMeat.html">MEAT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="http://127.0.0.1:5500/phuu/timeline.html">Timeline</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <p></p>
+        <div class="searchInput border border-success border-3 rounded p-3 bg-light">
+            <h2>ไดโนเสาร์กินพืช</h2>
+            <input type="text" id="searchInput" placeholder="ค้นหาชื่อ หรือ 001-999" onkeypress="handleKeyPress(event)">
+            <button onclick="search()">ค้นหา</button>
+        </div>  
+        <p></p>
+        
+          <div class='row justify-content-start'>
+            <!-- 001 -->
+            <div id="001" class='col-3 py-3 border border-success green-background mb-3'' ><!--เริ่มคอลัมน์ -->
+              <div id="Maiasaura" class="card py-3 px-2" width="18rem;"> <!--การ์ด(ช่อง) -->
+                  <img src="https://cdn.paleo.gg/games/jwe2/images/dino/maiasaura.png" class="card-img-top" alt="..."><!--รูปภาพ(ดูลิ้งค์ด้วย) -->
+                 <div class="card-body">
+                  <h2 class="card-title"> Maiasaura</h2><!--หัวเรื่อง -->
+                  <a href="http://127.0.0.1:5500/maprang/m1.html" class="btn btn-success">001</a><!--ปุ่ม --><br>
+                 </div>
+              </div>
+          </div> <!--จบคอลัมน์ -->
+
+          <!-- 002 -->
+          <div id="002" class='col-3 py-3 border border-success green-background mb-3''><!--เริ่มคอลัมน์ -->
+              <div id="Saichania" class="card py-3 px-2" width="18rem;"> <!--การ์ด(ช่อง) -->
+                  <img src=" https://cdn.mos.cms.futurecdn.net/MjguwowGv4CKCkTcK832sZ-1200-80.jpg.webp" class="card-img-top" alt="..."><!--รูปภาพ(ดูลิ้งค์ด้วย) -->
+                 <div class="card-body">
+                  <h2 class="card-title"> Saichania </h2><!--หัวเรื่อง -->
+                  <a href="http://127.0.0.1:5500/maprang/m2.html" class="btn btn-success">002</a><!--ปุ่ม --><br>
+                 </div>
+              </div> 
+          </div> <!--จบคอลัมน์ -->
+  
+          <!-- 003 -->
+          <div id="003" class='col-3 py-3 border border-success green-background mb-3''><!--เริ่มคอลัมน์ -->
+              <div id="Diplodocus" class="card py-3 px-2" width="18rem;"> <!--การ์ด(ช่อง) -->
+                  <img src="https://yoti-shop.fr/cdn/shop/files/IMG_6815-PhotoRoom.png?v=1702635477&width=2000" class="card-img-top" alt="..."><!--รูปภาพ(ดูลิ้งค์ด้วย) -->
+                 <div class="card-body">
+                  <h2 class="card-title">    Diplodocus  </h2><!--หัวเรื่อง -->
+                  <a href="http://127.0.0.1:5500/maprang/m3.html" class="btn btn-success">003</a><!--ปุ่ม --><br>
+                 </div>
+              </div> 
+          </div> <!--จบคอลัมน์ -->
+  
+          <!-- 004 -->
+          <div id="004" class='col-3 py-3 border border-success green-background mb-3''><!--เริ่มคอลัมน์ -->
+              <div id="Saltasaurus" class="card py-3 px-2" width="18rem;"> <!--การ์ด(ช่อง) -->
+                  <img src="https://cdn.imago-images.com/bild/st/0099420743/m.jpg" class="card-img-top" alt="..."><!--รูปภาพ(ดูลิ้งค์ด้วย) -->
+                 <div class="card-body">
+                  <h2 class="card-title">  Saltasaurus </h2><!--หัวเรื่อง -->
+                  <a href="http://127.0.0.1:5500/maprang/m4.html" class="btn btn-success">004</a><!--ปุ่ม --><br>
+                 </div> 
+              </div>    
+          </div> <!--จบคอลัมน์ -->
+  
+          <!-- 005 -->
+          <div id="005" class='col-3 py-3 border border-success green-background mb-3''><!--เริ่มคอลัมน์ -->
+              <div id="Triceratops" class="card py-3 px-2" width="18rem;"> <!--การ์ด(ช่อง) -->
+                  <img src="https://cdn.pixabay.com/photo/2023/02/19/21/42/triceratops-7801104_1280.png" alt="..."><!--รูปภาพ(ดูลิ้งค์ด้วย) -->
+                 <div class="card-body">
+                  <h2 class="card-title">   Triceratops</h2><!--หัวเรื่อง -->
+                  <a href="http://127.0.0.1:5500/maprang/m5.html" class="btn btn-success">005</a><!--ปุ่ม --><br>
+                 </div>
+              </div> 
+          </div> <!--จบคอลัมน์ -->
+  
+          <!-- 006 -->
+          <div id="006" class='col-3 py-3 border border-success green-background mb-3''><!--เริ่มคอลัมน์ -->
+              <div id="Gallimimus" class="card py-3 px-2" width="18rem;"> <!--การ์ด(ช่อง) -->
+                  <img src="https://cdn.paleo.gg/games/jpog/images/dino/gallimimus.png" alt="..."><!--รูปภาพ(ดูลิ้งค์ด้วย) -->
+                 <div class="card-body">
+                  <h2 class="card-title">  Gallimimus</h2><!--หัวเรื่อง -->
+                  <a href="http://127.0.0.1:5500/maprang/m6.html" class="btn btn-success">006</a><!--ปุ่ม --><br>
+                 </div>
+              </div> 
+          </div> <!--จบคอลัมน์ -->
+  
+          <!-- 007 -->
+          <div id="007" class='col-3 py-3 border border-success green-background mb-3''><!--เริ่มคอลัมน์ -->
+              <div id="Iguanodon" class="card py-3 px-2" width="18rem;"> <!--การ์ด(ช่อง) -->
+                  <img src="https://netrinoimages.s3.eu-west-2.amazonaws.com/2020/07/24/742268/312827/iguanodon_dinosaur_3d_model_c4d_max_obj_fbx_ma_lwo_3ds_3dm_stl_3252785_o.jpg" class="card-img-top" alt="..."><!--รูปภาพ(ดูลิ้งค์ด้วย) -->
+                 <div class="card-body">
+                  <h2 class="card-title">  Iguanodon</h2><!--หัวเรื่อง -->
+                  <a href="http://127.0.0.1:5500/maprang/m7.html" class="btn btn-success">007</a><!--ปุ่ม --><br>
+                 </div>
+              </div> 
+          </div> <!--จบคอลัมน์ -->
+  
+          <!-- 008 -->
+          <div id="008" class='col-3 py-3 border border-success green-background mb-3''><!--เริ่มคอลัมน์ -->
+              <div class="card py-3 px-2" width="18rem;"> <!--การ์ด(ช่อง) -->
+                  <img src="https://yoti-shop.fr/cdn/shop/files/IMG_6815-PhotoRoom.png?v=1702635477&width=2000" class="card-img-top" alt="..."><!--รูปภาพ(ดูลิ้งค์ด้วย) -->
+                 <div class="card-body">
+                  <h2 class="card-title">   Diplodocus</h2><!--หัวเรื่อง -->
+                  <a href="http://127.0.0.1:5500/maprang/m8.html" class="btn btn-success">008</a><!--ปุ่ม --><br>
+                 </div>
+              </div> 
+          </div> <!--จบคอลัมน์ -->
+  
+  
+          <!-- 009 -->
+          <div id="009" class='col-3 py-3 border border-success green-background mb-3''><!--เริ่มคอลัมน์ -->
+              <div id="Stegosaurus" class="card py-3 px-2" width="18rem;"> <!--การ์ด(ช่อง) -->
+                  <img src="https://science4fun.info/wp-content/uploads/2020/06/stegosaurus.jpg" class="card-img-top" alt="..."><!--รูปภาพ(ดูลิ้งค์ด้วย) -->
+                 <div class="card-body">
+                  <h2 class="card-title">  Stegosaurus </h2><!--หัวเรื่อง -->
+                  <a href="http://127.0.0.1:5500/maprang/m9.html" class="btn btn-success">009</a><!--ปุ่ม --><br>
+                 </div>
+              </div> 
+          </div> <!--จบคอลัมน์ -->
+  
+          <!-- 010 -->
+          <div id="010" class='col-3 py-3 border border-success green-background mb-3''><!--เริ่มคอลัมน์ -->
+              <div id="Apatosaurus" class="card py-3 px-2" width="18rem;"> <!--การ์ด(ช่อง) -->
+                  <img src="https://www.toydreamer.com/cdn/shop/products/Schleich-16462-Apatosaurus-Dinosaur_1000x.jpg?v=1639881114" class="card-img-top" alt="..."><!--รูปภาพ(ดูลิ้งค์ด้วย) -->
+                 <div class="card-body">
+                  <h2 class="card-title">  Apatosaurus </h2><!--หัวเรื่อง -->
+                  <a href="http://127.0.0.1:5500/maprang/m10.html" class="btn btn-success">010</a><!--ปุ่ม --><br>
+                 </div>
+              </div> 
+          </div> <!--จบคอลัมน์ -->
+        </div>
+
+                
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
