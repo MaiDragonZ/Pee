@@ -19,26 +19,22 @@ function search() {
     }
 
     for (var i = 1; i <= 999; i++) {
-        var id = ('00' + i).slice(-3);
-        var element = document.getElementById(id);
-        if (element) {
-            ids = id;
-            if (ids === searchText) {
-                window.location.href = '#' + id;
-                break;
+        var id = ('00' + i).slice(-3); // 1 ,01 ,001;
+        var id1 = id; //3ตัว //000-999
+        if (id1 === searchText) {
+            window.location.href = '#' + id;
+            break;
             }
-            id1 = id.slice(-1);
-            if (id1 === searchText) {
-                window.location.href = '#' + id;
-                break;
+        var id2 = id.slice(-2); //2ตัว //00-99
+        if (id2 === searchText) {
+            window.location.href = '#' + id;
+            break;
             }
-            id1 = id.slice(-2);
-            if (id1 === searchText) {
-                window.location.href = '#' + id;
-                break;
-            }
+        var id3 = id.slice(-1); //1ตัว //0-9
+        if (id3 === searchText) {
+            window.location.href = '#' + id;
+            break;
         }
         
     }
 }
-
