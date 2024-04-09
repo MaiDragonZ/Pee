@@ -12,13 +12,10 @@ function search() {
          'Apatosaurus'];
     for (var i = 0; i < names.length; i++) {
         var name = names[i];
-        var element = document.getElementById(name);
-        if (element) {
             if (name === searchText) {
                 window.location.href = '#' + name;
                 break;
             }
-        }
     }
 
     for (var i = 1; i <= 999; i++) {
